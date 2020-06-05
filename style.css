@@ -1,0 +1,157 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+
+/*Setting the font for the whole page*/
+html *
+{
+  font-family:"Quicksand",'Courier New', Courier, monospace;
+}
+header{
+  background-color: rgb(96, 62, 110);
+  text-align: center;
+  display:block;
+}
+/*font sizes and additional settings*/
+header h1
+{
+  padding:25px;
+  font-size:30px;
+}
+p
+{
+  font-size:16px;
+}
+/*end fonts and additional settings*/
+/*display pic*/
+.display-pic
+{
+  background-color:rgb(85, 58, 95);
+}
+.display-pic img
+{
+  width:200px;
+  border-radius:25%;
+  border:2px black solid;
+}
+/*end display pic*/
+nav
+{
+  background-color:rgb(75, 49, 85);
+  padding:12px;
+  border-top: 1px black solid;
+  
+}
+main
+{
+  background-image:url("/images/Background-tile.jpg");
+}
+article
+{
+  width:50%;
+  color:black !important;
+  background-color: rgb(241, 215, 252);
+  border-top:0px;
+  border-bottom:0px;
+}
+section
+{
+  width:60%;
+  text-align:left;
+  padding:50px;
+}
+hr
+{
+  border-top:1px black solid;
+  border-bottom:rgb(127, 107, 136) 1px solid;
+}
+footer
+{
+  bottom:0;
+  
+  background-color:rgb(75, 49, 85);
+  
+}
+main,article,header
+{
+  height:auto;
+}
+
+body, html, section, .video
+{
+  
+  height:100%;
+
+}
+.display-pic,article,footer p
+{
+  padding:10px;
+}
+
+.display-pic img,.display-pic,main,article,section,nav,hr,#contact-info,.top-button
+{
+  margin:auto;
+  overflow:hidden;
+}
+header,article,footer,.top-button
+{
+  color:white;
+  border:1px black solid;
+  
+}
+header, header h1
+{
+  margin:0;
+}
+
+h1,h2,footer,article
+{
+  text-align:center;
+}
+.video,footer,main
+{
+  width:100%;
+}
+#contact-info
+{
+  width:100px;
+}
+
+
+/*Buttons:Placing visited here prevents it from having a permanent effect, so that the top nav buttons stay visibly interactive.*/
+.top-button
+{
+  font-size:25px;
+  margin-left:5px;
+  margin-right:5px;
+  border-radius: 3px;
+  text-decoration:unset;
+}
+.top-button:visited
+{
+  background-color:rgb(208, 173, 248);
+  padding: 5px;
+}
+
+.top-button:link
+{
+  background-color:rgb(208, 173, 248);
+  padding: 5px;
+}
+.top-button:hover
+{
+  background-color:rgb(226, 201, 255);
+  padding: 9px;
+}
+.top-button:active
+{
+  background-color:rgb(200, 151, 255);
+  padding: 5px;
+}
+
+.btn:link{color:rgb(184, 122, 255);}
+.btn:hover{color:rgb(245, 156, 215);}
+.btn:active{color:rgb(243, 83, 235);}
+.btn:visited{color:rgb(95, 65, 129);}
+/*end buttons*/
+
