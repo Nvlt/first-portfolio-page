@@ -1,33 +1,44 @@
+/* 
 
+I imported a font I found on google 
+
+https://fonts.google.com/specimen/Quicksand?sidebar.open&selection.family=Quicksand:wght@300
+
+*/
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
 
-/*Setting the font for the whole page*/
+/*Setting the font for the whole page, using the font I imported, with backups*/
 html *
 {
   font-family:"Quicksand",'Courier New', Courier, monospace;
 }
-header{
+/*Setting the color of the header and alignment*/
+header
+{
   background-color: rgb(96, 62, 110);
   text-align: center;
-  display:block;
 }
 /*font sizes and additional settings*/
+/*Setting the size of the display name/logo header and adjusting it's padding*/
 header h1
 {
   padding:25px;
   font-size:30px;
 }
+/*Setting the font size for every paragraph that doesn't have it's own id or class*/
 p
 {
   font-size:16px;
 }
 /*end fonts and additional settings*/
 /*display pic*/
+/*Here we modify the background of the div that contains my display picture*/
 .display-pic
 {
   background-color:rgb(85, 58, 95);
 }
+/*Here we modify the image size of my display picture, and round out the corners and add a border*/
 .display-pic img
 {
   width:200px;
@@ -35,6 +46,7 @@ p
   border:2px black solid;
 }
 /*end display pic*/
+/*Setting the background color of the navigation to something slightly darker than the header, adding padding so that there's room for the buttons.*/
 nav
 {
   background-color:rgb(75, 49, 85);
@@ -42,83 +54,92 @@ nav
   border-top: 1px black solid;
   
 }
+/*Added the background image that I made for this project, to the main element*/
 main
 {
   background-image:url("images/Background-tile.jpg");
 }
+/*Here I set the width of the article to half the size of main.
+Then I set the text color to black and add borders along the sides*/
 article
 {
   width:50%;
-  color:black !important;
+  color:black;
   background-color: rgb(241, 215, 252);
-  border-top:0px;
-  border-bottom:0px;
+  border-left:1px black solid;
+  border-right:1px black solid;
 }
+/*This reduces the top padding of the introduction section*/
+#introduction
+{
+  padding-top:5px;
+}
+/*Setting the default state of each section at slightly more than half the width of it's container, setting the default padding for sections and aligning everything in them to the left*/
 section
 {
   width:60%;
   text-align:left;
   padding:50px;
 }
+/*Adjusting the colors of my section dividers*/
 hr
 {
   border-top:1px black solid;
   border-bottom:rgb(127, 107, 136) 1px solid;
 }
+/*Setting the color of the footer*/
 footer
 {
-  bottom:0;
-  
   background-color:rgb(75, 49, 85);
-  
 }
+/*I set the main, article, and header elements to expand to the size of the content they contain*/
 main,article,header
 {
   height:auto;
 }
 
-body, html, section, .video
-{
-  
+/*I set the body, html, and sections to stretch to the height of the window they are loaded in*/
+body, html, section
+{  
   height:100%;
-
 }
+/*Consolidated the padding for my display pic container, the article element and paragraphs within the footer*/
 .display-pic,article,footer p
 {
   padding:10px;
 }
 
+/*Consolidated all automatic margins and overflow, so that when the page is too small, it doesn't cause overlapping*/
 .display-pic img,.display-pic,main,article,section,nav,hr,#contact-info,.top-button
 {
   margin:auto;
   overflow:hidden;
 }
-header,article,footer,.top-button
+/*Consolidated my use of the white font color, and full 1px black borders*/
+header,footer,.top-button
 {
   color:white;
   border:1px black solid;
   
 }
+/*Set the margin of the header and the heading within the header*/
 header, header h1
 {
   margin:0;
 }
-
+/*Aligning my biggest headers, footers and elements within article to center*/
 h1,h2,footer,article
 {
   text-align:center;
 }
-.video,footer,main
-{
-  width:100%;
-}
+/*Adjusting the width of the contact info container to something more appealing*/
 #contact-info
 {
   width:100px;
 }
 
 
-/*Buttons:Placing visited here prevents it from having a permanent effect, so that the top nav buttons stay visibly interactive.*/
+/*Setting the shared default style of my top nav buttons*/
 .top-button
 {
   font-size:25px;
@@ -127,28 +148,32 @@ h1,h2,footer,article
   border-radius: 3px;
   text-decoration:unset;
 }
+
+/*Placing visited here prevents it from having a permanent effect, so that the top nav buttons stay visibly interactive.*/
 .top-button:visited
 {
   background-color:rgb(208, 173, 248);
   padding: 5px;
 }
-
+/*Starting state of an un-visited link*/
 .top-button:link
 {
   background-color:rgb(208, 173, 248);
   padding: 5px;
 }
+/*The style when the mouse hovers over it*/
 .top-button:hover
 {
   background-color:rgb(226, 201, 255);
   padding: 9px;
 }
+/*The style when it's clicked*/
 .top-button:active
 {
   background-color:rgb(200, 151, 255);
   padding: 5px;
 }
-
+/*The same button stuff all over again for the contact info links, which I actually want to have a visited state. So I put it in proper order.*/
 .btn:link{color:rgb(184, 122, 255);}
 .btn:hover{color:rgb(245, 156, 215);}
 .btn:active{color:rgb(243, 83, 235);}

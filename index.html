@@ -1,37 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Alexis | Software/Web Developer | Portfolio</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <!-- Normalizing -->
+    <meta charset="utf-8"><!-- setting the character encoding to utf-8 -->
+    <meta name="viewport" content="width=device-width"><!-- Setting the width of the content to the size of the device viewing it -->
+    <title>Alexis | Software/Web Developer | Portfolio</title><!-- The title of the page to be displayed at the top of the browser -->
+    <link href="style.css" rel="stylesheet" type="text/css" /><!-- Link to my style sheet -->
+    <!-- Normalizing the css -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <header>
-      <h1 class="logo">
+    
+    <header><!--Header tag, contains my logo/name, and display picture, as well as my top navigation-->
+      <h1 class="logo"><!-- This is my page header, which is my name/logo -->
         Alexis Felts
       </h1>
-      <div class="display-pic">
-        <img src="images/me.jpg"/></div>
+      <div class="display-pic"><!-- a container for my display picture -->
+        <img alt="A picture of me" src="images/me.jpg"/><!-- This display picture itself -->
       </div>
       <p>
-        Software/Web Developer
+        Software/Web Developer <!-- a very brief summary of what I do -->
       </p>
-      <nav>
+      <nav><!-- My top navigation element with styled link buttons that link to my 3 section IDs within the page-->
         <a href="#introduction" class = "top-button">Intro</a>
         <a href="#about-me" class = "top-button">About Me</a>
         <a href="#contact" class = "top-button">Contact</a>
       </nav>
     </header>
-    <main>
-      <article>
+    <main><!-- The main content of the page, containing the article and it's sections-->
+      <article><!-- the page article which contains 3 sections-->
+        <h2>Introduction</h2><!-- a heading for the article -->
         <!-- section 1 introduction -->
-        <section id="introduction">
-          
-          <h2>Heya, I'm Alexis.</h2>
-
+        <section id="introduction"><!-- My introduction section of the article -->
+          <h3>Hiya, I'm Alexis!</h3>
           <p>I'm a Software/Web-Developer student located in Seattle Washington.</p>
 
           <p>Writing software is my favorite thing to do, and I look forward to learning everything I can to improve.</p>
@@ -39,25 +39,31 @@
         </section>
         <hr/>
         <!-- section 2 about me -->
-        <section id="about-me">
-          <h2>
+        <section id="about-me"><!-- The about me section that contains several paragraphs as well as both ordered and unordered lists -->
+          <h2><!-- The header of the section -->
             About Alexis
           </h2>
-          <p>Up until this point, I've been entirely self educated, and I've written code in several languages.</p> 
+          <p>Up until this point, I've been entirely self taught, and I've written code in several languages.</p> 
           
-          <p>I'm very well adapted to picking up a new language, looking at a reference, and getting started.</p>
+          <p>The web is my favorite place to be. I spend pretty much all of my time online, and I've looked at the source of nearly every page I've ever visited.</p>
+
+          <p>I love working with other people as well, and I strongly believe in keeping a positive, healthy environment for everyone involved, when working with others.</p>
+          <h3>Outside of development</h3><!-- Outside of development -->
+          <p>I spend most of my time on second life, where I do 3D art in blender and socialize with other artists, as well as script on the game's platorm (<a class="btn" href="http://wiki.secondlife.com/wiki/LSL_Portal"><b>LSL</b><!-- Bold text for the link --></a>) for fun, doing various experiments, as well as some products.</p><p>I'm really <em>really</em><!-- dramatic emphasis --> excited to get a VR headset so I can play with vr chat.</p>
           
-          <p>I'm usually coding all the time on my own projects such as this one:</p>
+          <h3><!-- Header for my list of favorite technologies -->
+            I'm interested in many technologies:
+          </h3>
+          <ul><!-- Unordered list of tech -->
+            <li><p>Social applications</p></li><!-- list items with paragraphs nested inside -->
+            <li><p>Machine learning</p></li>
+            <li><p>Games in unity</p></li>
+          </ul>
 
-          <h3 class="video">Jetbike in LSL:</h3>
-          <video class="video" controls>
-            <source src="https://i.gyazo.com/28752f6a5d27112ad6ee36bb340a04de.mp4" type="video/mp4">
-          </video>
-          <p class="video">A jetbike I scripted in LSL on second life, with drifting and a turbo boost.</p>
-
-          <h3>Languages I've written at least something in:</h3>
-          <ul>
-            <li><p>python</p></li>
+          
+          <h3>Languages I've written at least something in:</h3><!-- Header for my un ordered list of scripting languages -->
+          <ul><!-- another unordered list -->
+            <li><p>python</p></li><!-- list items with paragraphs nested inside -->
             <li><p>js</p></li>
             <li><p>php</p></li>
             <li><p>as3</p></li>
@@ -70,34 +76,34 @@
             <li><p>lua</p></li>
           </ul>
           <h3>Languages I've used a lot and am particularly decent at, in order:</h3>
-          <ol>
-            <li><p>python</p></li>
+          <ol><!-- My ordered list of languages I'm decent at -->
+            <li><p>python</p></li><!-- list items with paragraphs nested inside -->
             <li><p>LSL</p></li>
             <li><p>as3</p></li>
             <li><p>php</p></li>
             <li><p>js</p></li>
           </ol>
           <h4>I'm also already pretty familiar with:</h4>
-          <ul>
-            <li><p>json</p></li>
+          <ul><!-- Another unordered list of storage types -->
+            <li><p>json</p></li><!-- list items with paragraphs nested inside -->
             <li><p>xml</p></li>
             <li><p>and sql databases</p></li>
           </ul>
 
-          <h3>My journey with Thinkful</h3>
+          <h3>My journey with Thinkful</h3><!-- Journey at thinkful header -->
           <p>I'm studying with thinkful to learn as much as I can to fill in the gaps, prove that I can do this, and make great friends along the way.</p>
 
-          <h3>I hope we can work together soon!</h3>
+          <h3>I hope we can work together soon!</h3><!-- about me: closing statement -->
 
 
         </section>
         <hr/>
         <!-- section 3 Contact -->
-        <section id="contact">
-          <h2>
+        <section id="contact"><!-- My contact section -->
+          <h2><!-- Header of my contact section -->
             Contact Alexis
           </h2>
-          <ul id="contact-info">
+          <ul id="contact-info"><!-- an unordered list of my contact information -->
             <li><p>
               <a class="btn" href="mailto:puzzlingviolets@gmail.com">Email</a>
             </p></li>
@@ -107,13 +113,13 @@
             <li><p>
               <a class="btn" href="https://github.com/Nvlt">Github</a>
             </p></li>
-          </ol>         
+          </ul>         
         </section>
       </article>
     </main>
-    <footer>
+    <footer><!-- The footer with copyright info -->
       <p>©Alexis</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="script.js"></script><!-- connecting the javascript I haven't actually done anything with yet -->
   </body>
 </html>
