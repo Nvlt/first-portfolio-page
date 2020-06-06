@@ -44,7 +44,7 @@ nav
 }
 main
 {
-  background-image:url("/images/Background-tile.jpg");
+  background-image:url("images/Background-tile.jpg");
 }
 article
 {
